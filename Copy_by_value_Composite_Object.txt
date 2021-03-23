@@ -1,0 +1,10 @@
+var a = [1,2,3,4,5,6,7,8,9,10];
+var b =[...a] ;
+b[2] = 99;
+var c = {"name":"John", "age":"25","Sex":"Male"};
+var d = {...c};
+d.age = "30";
+console.log("array a:",a);
+console.log("array b:",b);
+console.log("object c:",c);
+console.log("object d:",d);

@@ -1,0 +1,36 @@
+Copy By Value - Primitive Datatype
+----------------------------------
+
+var a = 5; 
+var b = a ;
+a = 4 ;
+console.log(a)
+console.log(b)
+
+Output:
+4
+5
+
+Copy By value on a primitive datatype will not affect the data change on the other variable once copied 
+on the primary variable as seen above ,since the value is only copied not a reference(address). 
+
+
+Copy By Reference - Non-Primitive Datatype
+------------------------------------------
+
+var a = { name : "John",
+          age : "25",
+          sex : "Male"}
+var b = a ;
+b.age = "28"
+console.log(a)
+console.log(b)
+
+Output:
+{ name: 'John', age: '28', sex: 'Male' }
+{ name: 'John', age: '28', sex: 'Male' }
+
+
+Copy By Reference on a non-primitive datatype will affect the data change on the other variable once copied 
+on the primary variable as seen above ,since the value is copied by a reference(address). 
+
